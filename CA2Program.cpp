@@ -2,16 +2,16 @@
 int main()
 {
 	int pro,res,i,j,a=0,k=0,b=0,n;
-	printf("Enter number of process::");
+	printf("Enter number of process ::");
 	scanf("%d",&pro);
-	printf("Enter number of resources::");
+	printf("Enter number of resources ::");
 	scanf("%d",&res);
 	int max[pro][res],allocation[pro][res],available[res],need[pro][res],instance,finish[pro],request[pro][res];
 	for(i=0;i<pro;i++)
 	{
 		finish[i]=0;
 	}
-	printf("Enter Maximum matrix::\n");
+	printf("Enter Maximum matrix ::\n");
 	for(i=0;i<pro;i++)
 	{
 		printf("P[%d]\t",i);
@@ -22,7 +22,7 @@ int main()
 		}
 	}
 	
-	printf("Enter allocation matrix::\n");
+	printf("Enter allocation matrix ::\n");
 	for(i=0;i<pro;i++)
 	{
 		printf("P[%d]\t",i);
@@ -32,7 +32,7 @@ int main()
 			allocation[i][j]=instance;
 		}
 	}
-	printf("Enter available matrix::\n");
+	printf("Enter available matrix ::\n");
 	for(j=0;j<res;j++)
 	 {
 			scanf("\n%d",&instance);
@@ -46,7 +46,7 @@ int main()
 			need[i][j]=max[i][j]-allocation[i][j];
 		}
 	}
-	printf("The required matrix is::");
+	printf("The need matrix is ::");
 	for(i=0;i<pro;i++)
 	{
 		printf("\nP[%d]\t",i);
@@ -104,7 +104,7 @@ int main()
 		
 		
 	printf("Enter additional request by P0 process\n");
-	printf("request[0]::\t");
+	printf("request[0] ::\t");
 	for(j=0;j<res;j++)
 	{
 		
@@ -168,7 +168,7 @@ int main()
 	//For P[1] requesting additional resources
 	case 3:
 		printf("Enter additional request by P[1] processes\n");
-		printf("request[0]::\t");
+		printf("request[0] ::\t");
 	for(j=0;j<res;j++)
 	{
 		scanf("%d",&instance);

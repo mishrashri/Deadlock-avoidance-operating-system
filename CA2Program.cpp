@@ -223,7 +223,7 @@ int main()
 		if(a==b)
 		{
 			printf("\tStop after this system is unsafe...there is a deadlock>>\n\n");
-			printf("So Reena''s operating system is unsafe if there is a additional request by P[0]\n");
+			printf("So Reena's operating system is unsafe if there is a additional request by P[0]\n");
 			break;
 		}
 		
